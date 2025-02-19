@@ -1,0 +1,332 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-image: linear-gradient(to right,#0C0526,#2C118C );
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.img-grande{
+  margin: 0px;
+  padding: 10px;
+}
+
+nav {
+    background-color: #000000;
+    padding: 22px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0px;
+    border-radius: 10px;
+  }
+
+
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .logo {
+    position: absolute;
+    top: 10px;  /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+    width: 50px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção */
+  }
+  
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    padding: 80px 20px;
+    margin-top: 50px;
+  }
+
+  #inicio{
+    font-size: 45px;
+  }
+  
+  section h2 {
+    margin-bottom: 20px;
+  }
+  h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  h2{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  p{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .linha-divisoria {
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    margin: 40px 0;
+  }
+  
+
+  .apresentar{
+    background-color: #1b0a5a;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 100%; 
+}
+
+.left {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+.linha-divisoria {
+  width: 100%;
+  height: 4px;
+  background-color: #000000;
+  margin: 40px 0;
+}
+
+.container2 {
+  display: flex; /* Organiza lado a lado */
+  align-items: center; /* Alinha verticalmente */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 90%; /* Não deixa o conteúdo ficar muito grande */
+  flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+  gap: 20px; /* Espaço entre os elementos */
+}
+
+/* Estiliza a imagem */
+.imagem {
+  width: 600px; /* Largura padrão */
+  height: auto; /* Mantém a proporção */
+  max-width: 100%; /* Impede que fique maior que o contêiner */
+}
+
+/* Estiliza a caixa de texto */
+.caixa-texto {
+  width: 600px; /* Largura padrão */
+  height: auto; /* Altura automática */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 18px;
+  padding-left: 40px;
+  max-width: 100%; /* Impede que fique maior que o contêiner */
+}
+
+/* 📌 Tornando Responsivo */
+@media (max-width: 1200px) {
+  .container {
+      flex-direction: column; /* Muda para coluna em telas menores */
+      align-items: center; /* Centraliza os itens */
+  }
+
+  .imagem, .caixa-texto {
+      width: 100%; /* Ocupa toda a largura disponível */
+      max-width: 600px; /* Não passa de 600px */
+      text-align: center; /* Centraliza o texto */
+      padding-left: 0; /* Remove o recuo esquerdo */
+  }
+}
+
+.conteiner3 {
+  display: flex; /* Organiza os elementos lado a lado */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: space-between; /* Mantém espaço entre os itens */
+  background: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 90%; /* Evita que ultrapasse a largura da tela */
+  flex-wrap: wrap; /* Permite que os elementos quebrem para a linha de baixo */
+  gap: 20px; /* Espaço entre a imagem e o texto */
+}
+
+/* Estiliza a caixa de texto */
+.caixa-texto3 {
+  width: 600px; /* Largura fixa */
+  height: auto; /* Ajusta conforme o conteúdo */
+  background: #000000;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 18px;
+  max-width: 100%; /* Evita que a caixa fique maior que o necessário */
+}
+
+/* Estiliza a imagem */
+.imagem3 {
+  width: 600px; /* Tamanho padrão */
+  height: auto; /* Mantém a proporção */
+  max-width: 100%; /* Não ultrapassa o contêiner */
+}
+
+/* 📌 Responsividade */
+@media (max-width: 1200px) {
+  .conteiner3 {
+      flex-direction: column-reverse; /* Inverte a ordem da imagem e do texto */
+      align-items: center; /* Centraliza os elementos */
+  }
+
+  .caixa-texto3, .imagem3 {
+      width: 100%; /* Ocupa toda a largura disponível */
+      max-width: 600px; /* Mantém um limite */
+      text-align: center; /* Centraliza o texto */
+  }
+}
+
+.container4 {
+  display: flex; /* Organiza lado a lado */
+  align-items: center; /* Alinha verticalmente */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 90%; /* Não deixa o conteúdo ficar muito grande */
+  flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+  gap: 20px; /* Espaço entre os elementos */
+}
+
+/* Estiliza a imagem */
+.imagem {
+  width: 600px; /* Largura padrão */
+  height: auto; /* Mantém a proporção */
+  max-width: 100%; /* Impede que fique maior que o contêiner */
+}
+
+/* Estiliza a caixa de texto */
+.caixa-texto {
+  width: 600px; /* Largura padrão */
+  height: auto; /* Altura automática */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 18px;
+  padding-left: 40px;
+  max-width: 100%; /* Impede que fique maior que o contêiner */
+}
+
+/* 📌 Tornando Responsivo */
+@media (max-width: 1200px) {
+  .container {
+      flex-direction: column; /* Muda para coluna em telas menores */
+      align-items: center; /* Centraliza os itens */
+  }
+
+  .imagem, .caixa-texto {
+      width: 100%; /* Ocupa toda a largura disponível */
+      max-width: 600px; /* Não passa de 600px */
+      text-align: center; /* Centraliza o texto */
+      padding-left: 0; /* Remove o recuo esquerdo */
+  }
+}
+
+.container4 {
+  display: flex; /* Organiza lado a lado */
+  align-items: center; /* Alinha verticalmente */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 90%; /* Não deixa o conteúdo ficar muito grande */
+  flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+  gap: 20px; /* Espaço entre os elementos */
+}
+
+/* Estiliza a imagem */
+.imagem {
+  width: 600px; /* Largura padrão */
+  height: auto; /* Mantém a proporção */
+  max-width: 100%; /* Impede que fique maior que o contêiner */
+}
+
+/* Estiliza a caixa de texto */
+.caixa-texto {
+  width: 600px; /* Largura padrão */
+  height: auto; /* Altura automática */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 18px;
+  padding-left: 40px;
+  max-width: 100%; /* Impede que fique maior que o contêiner */
+}
+
+/* 📌 Tornando Responsivo */
+@media (max-width: 1200px) {
+  .container4 {
+      flex-direction: column; /* Muda para coluna em telas menores */
+      align-items: center; /* Centraliza os itens */
+  }
+
+  .imagem, .caixa-texto {
+      width: 100%; /* Ocupa toda a largura disponível */
+      max-width: 600px; /* Não passa de 600px */
+      text-align: center; /* Centraliza o texto */
+      padding-left: 0; /* Remove o recuo esquerdo */
+  }
+}
+
+.linha-divisoria2 {
+  width: 100%;
+  height: 4px;
+  background-color: #000000;
+  margin: 40px 0;
+}
